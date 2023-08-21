@@ -1,0 +1,29 @@
+
+    .login {
+      padding: 80px 0;
+      }
+  
+    .login form {
+      margin: 0 auto;
+      max-width: 320px;
+      
+     }
+
+     button{
+        background-color: teal;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+
+     }
+     form{
+        border-radius: 1px;
+        background-color: whitesmoke;
+        
+     }
+
+    
+  
+   
+
+   

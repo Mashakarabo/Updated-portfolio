@@ -1,0 +1,57 @@
+.contact{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    position: relative;
+    right: 60px;
+    top: 170px;
+    background-color: teal;
+    border-radius: 5px;
+}
+
+.contact img{
+    width: 40%;
+}
+
+.MySkillsContent{
+    padding: 5%;
+    position: absolute;
+}
+
+#skillsloadpic{
+    width: 100px;
+    position: absolute;
+    top: 18%;
+    left: 19%;
+}
+
+.animate__zoomInUp{
+    animation-duration: 3s;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .contact{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 2px;
+        width: 450px;
+        position: relative;
+        right: 250px;
+        top: 60px;
+        
+    }
+
+    .MySkillsContent{
+        position: relative;
+        right: -6px;
+    }
+
+    #skillsloadpic{
+        display: none;
+    }
+}
+
+
+
