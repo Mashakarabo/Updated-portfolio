@@ -159,8 +159,8 @@
     left: 28%;
 }
 
-.animate__zoomInLeft{
-    animation-duration: 4s;
+.animate__zoomIn{
+    animation-duration: 2s;
 }
 
 @media only screen and (max-width: 600px) {

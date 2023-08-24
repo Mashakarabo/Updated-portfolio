@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import './SignIn.css'
 
+
 export default function SignIn() {
+
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
     const [username, setUsername] = useState();
     const [password, setpassword] = useState();
@@ -29,7 +34,7 @@ export default function SignIn() {
         /><br/><br/>
 
 
-        <button>Login</button>
+        <button onClick={() => openInNewTab('http://localhost:3000/SignIn?')}>Login</button>
 
         </form>
        

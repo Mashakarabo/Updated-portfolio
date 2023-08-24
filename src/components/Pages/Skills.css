@@ -25,8 +25,12 @@
     left: 19%;
 }
 
-.animate__zoomInUp{
-    animation-duration: 3s;
+.animate__fadeInTopLeft{
+    animation-duration: 2s;
+}
+
+.animate__fadeInTopRight{
+    animation-duration: 2s;
 }
 
 

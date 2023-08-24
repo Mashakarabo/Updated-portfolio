@@ -29,7 +29,11 @@ export const SidebarData = [
 },
 {
 	title: "Admin.",
-	path: "/SignIn"
+	path: "/SignIn",
+},
+{
+	
+	path: "/Create",
 },
 
 ];

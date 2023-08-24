@@ -1,54 +1,61 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import './ContactMe.css';
 import 'animate.css';
 import loc from '../images/location.png';
 import Phn from '../images/phone.png';
-import email from '../images/email.png';
 import contactGif from '../images/contact.gif';
+import { useState } from 'react';
+import {db} from '../firebase';
+import { addDoc, collection } from 'firebase/firestore';
 
 
 
 const Contact = () => {
 
-  const form = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  //form validation
 
-    emailjs.sendForm('service_d5do3yi', 'template_lmz8rci', form.current, 'idr1pnWvR6keVFSjt')
-      .then((result) => {
-          console.log('message send');
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  const userCollectionRef = collection(db, 'data')
+
+  const handleSubmit = async (e) =>{
+    e.preventDefault()
+
+   await addDoc(collection(db, 'data'),{
+      name,
+      email,
+      message
+    })
+
+    setName('');
+    setEmail('');
+    setMessage('');
+
+  }
 
 return (
 	<>
 
-
-  
-	
 	<h1 className="Contact-heading">Contact Me.</h1>
-
-	<div class="container">
+  <div class="container animate__animated animate__zoomIn">
     <div class="content">
       <div class="left-side">
         <div class="address details">
-          <img src={loc} alt="" width={20} className="loc animate__animated animate__zoomInLeft"/>
+          <img src={loc} alt="" width={20} className="loc"/>
           <div class="topic">Address</div>
           <div class="text-one">lower long street</div>
           <div class="text-two">Cape Town</div>
         </div>
         <div class="phone details">
-          <img src={Phn} alt="" width={20} className="Phn animate__animated animate__zoomInLeft"/>
+          <img src={Phn} alt="" width={20} className="Phn"/>
           <div class="topic">Phone</div>
           <div class="text-one">07156736082</div>
           <div class="text-two">0817866564</div>
         </div>
         <div class="email details">
-          <img src={email} alt="" width={20} className="email animate__animated animate__zoomInLeft" /> 
+          <img src={email} alt="" width={20} className="email" /> 
           <div class="topic">Email</div>
           <div class="text-two">mashakarabo10@gmail.com</div>
         </div>
@@ -58,19 +65,33 @@ return (
         <p>Dont hesitate to contact me.</p>
 
 
-      <form ref={form} onSubmit={sendEmail}>
+
+
+
+      
+      <form onSubmit={handleSubmit} >
         <div class="input-box">
-          <input type="text" placeholder="Enter your name" name="from_name" />
+          <input type="text" placeholder="Enter your name" name="from_name" 
+          value={name}
+          onChange={(event)=>{
+            setName(event.target.value)
+          }} />
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Enter your email" name="user_email" />
+          <input type="text" placeholder="Enter your email" name="user_email"
+          value={email}
+          onChange={(event)=>{
+            setEmail(event.target.value)
+          }}  />
         </div>
         <div class="input-box message-box">
-          <input type="textarea" placeholder="Enter your message" name="message" />
+          <input type="textarea" placeholder="Enter your message" name="message"
+          value={message} 
+          onChange={(event)=>{
+            setMessage(event.target.value)
+          }} />
         </div>
-        <div class="button">
-          <input type="Submit" value="Send" />
-        </div>
+        <button onClick={handleSubmit}>Send</button>
       </form>
     </div>
     </div>
