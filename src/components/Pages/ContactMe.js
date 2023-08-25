@@ -7,6 +7,7 @@ import contactGif from '../images/contact.gif';
 import { useState } from 'react';
 import {db} from '../firebase';
 import { addDoc, collection } from 'firebase/firestore';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 
@@ -16,9 +17,15 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  //form validation
+  //google Captcha codes
+  const [isCaptchaSuccessful, setIsCaptchaSuccess] = React.useState(false)
 
-  const userCollectionRef = collection(db, 'data')
+  function onChange(value) {
+    setIsCaptchaSuccess(true)
+    console.log("captcha value: ", value);
+  }
+  // the above codes ends here
+
 
   const handleSubmit = async (e) =>{
     e.preventDefault()
@@ -91,7 +98,12 @@ return (
             setMessage(event.target.value)
           }} />
         </div>
-        <button onClick={handleSubmit}>Send</button>
+
+        
+        <button disabled={!isCaptchaSuccessful} onClick={handleSubmit}>Send</button>
+        <ReCAPTCHA
+          sitekey="6LeW-dInAAAAAH-rTg6sbtctOjjhvaMfr294T8mI" onChange={onChange} id="Nocap"/>
+
       </form>
     </div>
     </div>
