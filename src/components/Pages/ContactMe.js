@@ -73,9 +73,6 @@ return (
 
 
 
-
-
-      
       <form onSubmit={handleSubmit} >
         <div class="input-box">
           <input type="text" placeholder="Enter your name" name="from_name" 
@@ -98,12 +95,14 @@ return (
             setMessage(event.target.value)
           }} />
         </div>
-
+        <div className='recaptch'>
+        <ReCAPTCHA
+          sitekey="6LeW-dInAAAAAH-rTg6sbtctOjjhvaMfr294T8mI" onChange={onChange} />
+       </div>
         
         <button disabled={!isCaptchaSuccessful} onClick={handleSubmit}>Send</button>
-        <ReCAPTCHA
-          sitekey="6LeW-dInAAAAAH-rTg6sbtctOjjhvaMfr294T8mI" onChange={onChange} id="Nocap"/>
-
+        
+        
       </form>
     </div>
     </div>

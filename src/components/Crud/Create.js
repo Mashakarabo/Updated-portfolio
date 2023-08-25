@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import axios from "axios";
 import './create.css';
-
+import {database} from '../Crud/fayabase';
+import { addDoc, collection } from 'firebase/firestore';
 
 
 export default function Create() {
@@ -10,6 +11,28 @@ export default function Create() {
     const[project,setproject] = useState('');
     const[framework,setframework] = useState('');
     const[url,seturl] = useState('');
+
+// send data in to the firebase database
+const Submitprojects = async (e) =>{
+    e.preventDefault()
+   await addDoc(collection(database, 'projectdata'),{
+      project,
+      framework,
+      url
+    }).then((docRef) => {
+        alert("Data Successfully Submitted");
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+
+    setproject('');
+    setframework('');
+    seturl(''); 
+  }
+// the above codes ends here
+  
+
 
     const addproject = () =>{
 
@@ -61,3 +84,6 @@ export default function Create() {
         </>
     )
 }
+
+
+
