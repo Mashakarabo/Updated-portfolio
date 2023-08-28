@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactMe.css';
 import 'animate.css';
 import loc from '../images/location.png';
+import emaill from '../images/email.png';
 import Phn from '../images/phone.png';
 import contactGif from '../images/contact.gif';
 import { useState } from 'react';
@@ -62,7 +63,7 @@ return (
           <div class="text-two">0817866564</div>
         </div>
         <div class="email details">
-          <img src={email} alt="" width={20} className="email" /> 
+          <img src={emaill} alt="" width={20} className="email" /> 
           <div class="topic">Email</div>
           <div class="text-two">mashakarabo10@gmail.com</div>
         </div>
