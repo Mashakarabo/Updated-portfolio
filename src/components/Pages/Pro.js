@@ -27,6 +27,7 @@ const Pro = () => {
    
 return (
 	<>
+   
 	<div className="switch-to-home ">
         <div className="first-switch">
           <a href="0817855654"><img src={whatsappme} alt=""  id="myicon"/></a>
@@ -58,7 +59,7 @@ return (
 
     </div>
     <div className="names">
-        <h1>Front-End<br/> Developer</h1>
+        <h1>Junior Software Developer</h1>
     </div>
     <div className="clickables-one">
         <input type="button" value="Download Cv" onClick={onButtonClick}/>
@@ -71,7 +72,7 @@ return (
         
     </div>
     
-    
+   
  </>
 
 	

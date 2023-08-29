@@ -11,23 +11,29 @@ left: -16%;
 
 .names{
 position: absolute;
-top: 20%;
-right: 13%;
-font-size: 20px;
+top: 25%;
+right: 10%;
+font-size: 15px;
 }
 
 .clickables-one{
 position: absolute;
 top: 78%;
-right: 10%;
+right: 17%;
+}
+.clickables-two{
+position: absolute;
+top: 78%;
+right: 35%;
 }
 
 input{
 padding: 10px;
 border-radius: 10px;
 box-shadow: 2px 2px 2px black;
-background-color:  #0784F8;
+background-color:  #F41F38;
 color: white;
+width: 130%;
 }
 
 #myicon{
@@ -41,15 +47,9 @@ left: 50%;
 width: 10%;
 position: absolute;
 top: 87%;
-left: 10%;
+left: 5%;
 }
 
-.clickables-two{
-position: absolute;
-top: 78%;
-right: 25%;
-    
-}
 
 .switch-to-home{
 display: flex;
@@ -57,29 +57,25 @@ height: 810px;
 }
 
 .first-switch{
-background-color: #f3f3f3;
-width: 30%;
+background-color: rgba(217, 217, 217, 0.56);
+width: 20%;
 margin: 5px;
 padding: 5px;
 display: flex;
 justify-content: space-between;
-
 }
 
 #shanepic{
 position: relative;
 right: 10%;
 top: 8%;
-   
 }
 
 .second-switch{
-width: 70%;
+width: 80%;
 text-align: center;
 display: flex;
 background-color: #D9D9D9;
-    
-    
 }
 
 .animate__fadeInRight{
