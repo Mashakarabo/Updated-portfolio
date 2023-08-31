@@ -1,12 +1,23 @@
+.new-skills-design{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgba(0, 128, 128, 0.503);
+    top: 80%;
+    border-radius: 70px 30px;
+}
+.new-skills-design h2{
+    color: white;
+}
 .contact{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
     padding: 10px;
     position: relative;
     right: 60px;
     top: 170px;
-    background-color: teal;
-    border-radius: 5px;
+    border-radius: 30%;
+    box-shadow: 3px 1px 3px 2px teal;   
 }
 
 .contact img{
@@ -33,18 +44,18 @@
     animation-duration: 2s;
 }
 
-
 @media only screen and (max-width: 600px) {
 
     .contact{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
         grid-column-gap: 2px;
-        width: 450px;
+        width: 400px;
         position: relative;
-        right: 250px;
+        right: 225px;
         top: 60px;
-        
+        border-radius: 0px;
+        box-shadow: none;
     }
 
     .MySkillsContent{
@@ -54,6 +65,21 @@
 
     #skillsloadpic{
         display: none;
+    }
+    .new-skills-design{
+        display: grid;
+        width: 80%;
+        border-radius: 0px;
+        position: absolute;
+        left: 13%;
+        background-color:  rgba(0, 128, 128, 0.503);
+        top: 70%;
+        box-shadow: 3px 1px 2px 1px teal;
+       
+    }
+
+    .new-skills-design h2{
+        color: black;
     }
 }
 

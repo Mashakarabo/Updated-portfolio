@@ -55,6 +55,12 @@ return (
             </div>
             
         </div>
+
+        <div className="hidden-content">
+          <a href="0817855654"><img src={whatsappme} alt=""  id="myicon"/></a>
+          <a href="https://github.com/Mashakarabo"><img src={githupme} alt="" id="myicon"/></a>
+          <a href="https://www.linkedin.com/in/karabo-masha-aa91b4196/"><img src={linkedinme} alt="" id="myicon"/></a>
+        </div>
         
 
     </div>

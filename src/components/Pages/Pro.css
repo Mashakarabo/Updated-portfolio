@@ -3,6 +3,10 @@ body{
     background-color: white
 }
 
+.hidden-content{
+    display: none;
+}
+
 .Content{
 position: relative;
 top: 22%;
@@ -86,14 +90,15 @@ animation-duration: 2s;
 @media only screen and (max-width: 600px) {
  
     .first-switch{
-    display: none;
+        display: none;
+    
     }
    
 
     .second-switch{
     display: grid;
     margin: 10px;
-    background-color: white;
+    background-color: white
        
     }
     .pic{
@@ -105,14 +110,16 @@ animation-duration: 2s;
 
     #shanepic{
     position: relative;
-    bottom: -1%;
-    right: 1%;
-    width: 170%;
+    top: 4%;
+    right: 14%;
+    width: 180%;
     }
     .names{
     position: absolute;
-    top: 450px;
-    right: 14%;
+    top: 500px;
+    right: -10%;
+    font-size: 100%;
+    width: 100%;
         
     }
 
@@ -128,12 +135,22 @@ animation-duration: 2s;
     
     .Content{
     position: absolute;
-    top: 485px;
+    top: 530px;
     left: 10px;
     font-size: smaller;
-    width: 130%;
-    border-radius: 71% 29% 31% 69% / 73% 58% 42% 27%;
-    background-color: #0784F8;
+    width: 115%;
+    background-color: rgba(206, 255, 196, 0.221);
+    box-shadow: 0 20px 20px rgba(0, 212, 205, 0.884);
+    color: black;
+    border-radius: 10px;
+        
+    }
+    .hidden-content{
+        display: flex;
+        position: absolute;
+        bottom: 10%;
+        width: 60%;
+        left: 16%;
         
     }
 

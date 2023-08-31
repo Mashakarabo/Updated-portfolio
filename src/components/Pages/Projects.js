@@ -65,11 +65,7 @@ return (
 	</div>
 	<hr/>
  </div>
- <div className="Archived-projects">
-	<h2>Archived projects</h2>
-	
-	 
- </div>
+
  
 	
  </>

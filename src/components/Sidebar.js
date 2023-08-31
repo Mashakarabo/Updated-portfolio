@@ -12,7 +12,7 @@ import './sidebar.css';
 
 
 const Nav = styled.div`
-background: #0784F8;
+background: teal;
 height: 80px;
 display: flex;
 justify-content: flex-start;
@@ -66,7 +66,7 @@ return (
 			style={{ textAlign: "center",
 					fontFamily: "Krona One",
 					marginLeft: "1000px",
-					color: "black",
+					color: "white",
 					fontSize: "30px" }}
 		>
 			Karabo
