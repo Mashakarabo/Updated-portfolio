@@ -6,6 +6,7 @@ import whatsappme from '../images/whatsUp.png';
 import linkedinme from '../images/linkedin.png';
 import githupme from '../images/github.png';
 import followme from '../images/followMe.gif';
+import ScreenSaver from '../images/backgroundscreensaver.gif';
 import 'animate.css';
 
 const Pro = () => {
@@ -27,7 +28,7 @@ const Pro = () => {
    
 return (
 	<>
-   
+    <div className="BackgroundSrcn" style={{ backgroundImage: `url(${ScreenSaver})`,backgroundRepeat: 'no-repeat'}}>
 	<div className="switch-to-home ">
         <div className="first-switch">
           <a href="0817855654"><img src={whatsappme} alt=""  id="myicon"/></a>
@@ -78,7 +79,7 @@ return (
         
     </div>
     
-   
+    </div>
  </>
 
 	

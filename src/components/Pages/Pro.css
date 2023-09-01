@@ -35,10 +35,13 @@ right: 35%;
 input{
 padding: 10px;
 border-radius: 10px;
-box-shadow: 2px 2px 2px black;
-background-color:  #F41F38;
+background-color:  red;
 color: white;
 width: 130%;
+}
+
+input:hover{
+    box-shadow: 1px 1px 2px 2px teal;
 }
 
 #myicon{
@@ -46,6 +49,7 @@ width: 30%;
 position: relative;
 top: 70%;
 left: 50%;
+
 }
 
 #followMoo{
@@ -53,6 +57,7 @@ width: 10%;
 position: absolute;
 top: 87%;
 left: 5%;
+display: none;
 }
 
 
@@ -62,30 +67,37 @@ height: 810px;
 }
 
 .first-switch{
-background-color: rgba(217, 217, 217, 0.56);
+
 width: 20%;
 margin: 5px;
 padding: 5px;
 display: flex;
 justify-content: space-between;
+position: relative;
+left: 60%;
+bottom: 20%;
 }
 
 #shanepic{
 position: relative;
 right: 10%;
 top: 8%;
+background-color: rgba(0, 128, 128, 0.545);
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 .second-switch{
 width: 80%;
 text-align: center;
 display: flex;
-background-color: #D9D9D9;
+
 }
 
 .animate__fadeInRight{
 animation-duration: 2s;
 }
+
+
 
 @media only screen and (max-width: 600px) {
  
@@ -140,7 +152,6 @@ animation-duration: 2s;
     font-size: smaller;
     width: 115%;
     background-color: rgba(206, 255, 196, 0.221);
-    box-shadow: 0 20px 20px rgba(0, 212, 205, 0.884);
     color: black;
     border-radius: 10px;
         

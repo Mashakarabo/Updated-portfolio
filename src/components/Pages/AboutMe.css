@@ -20,6 +20,10 @@
     right: 129%;
     width: 100px
 }
+#shanepix{
+     position: relative;
+    top: 70px
+}   
 
 .animate__fadeInDown{
    animation-duration: 3s; 
@@ -29,14 +33,19 @@
     width: 80%;
     position: absolute;
     top: 83%;
-    right: 16%;
+    right: 21%;
     display: flex;
     justify-content: space-evenly;
     
 }
+.bio h1{
+    color: teal;
+    position: relative;
+    bottom: 10px;
+}
 
 .numbersDisplay h1{
-    color: red;
+    color: teal;
     padding: 10px;
     font-size:large;
 }
@@ -77,6 +86,7 @@
         position: absolute;
         bottom: -300px;
         right: -60px;
+        
     }
     
   }

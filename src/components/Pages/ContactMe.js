@@ -40,6 +40,7 @@ const Contact = () => {
     setName('');
     setEmail('');
     setMessage('');
+    alert('Your Data was successfully sent!!');
 
   }
 

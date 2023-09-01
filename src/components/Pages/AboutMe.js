@@ -1,6 +1,7 @@
 import React from "react";
 import backgrounddots from "../images/gdots.gif";
 import newaboutmepic from "../images/mYabouTpiC.png"
+import AboutScreenSaverBackground from '../images/backgroundscreensaverSecond.gif';
 import './AboutMe.css';
 import 'animate.css';
 
@@ -9,6 +10,7 @@ export const AboutMe = () => {
 
 return (
 	<>
+    <div className="Background-screen-saver" style={{ backgroundImage: `url(${AboutScreenSaverBackground})`,backgroundRepeat: 'no-repeat'}}>
 		
 	<div className="AboutMe-content">
 		
@@ -60,6 +62,8 @@ return (
                 </span>
             </h1>
         </div>
+    </div>
+
     </div>
 	</>
 );
