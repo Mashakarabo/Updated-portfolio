@@ -5,6 +5,7 @@
   font-Family: "Krona One";
   
   
+  
   }
   .home,
   .services,
@@ -15,16 +16,11 @@
   display: flex;
   margin-left: 260px;
   font-size: 2rem;
+  height: 50vh;
   }
   
-  .Landing-page{
-    width: 100%;
-    background-color: black;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-
-  }
+  
+ 
  
 
   /* css styling for the landing-page */

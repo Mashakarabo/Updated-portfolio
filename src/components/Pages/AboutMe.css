@@ -21,7 +21,7 @@
     width: 100px
 }
 #shanepix{
-     position: relative;
+    position: relative;
     top: 70px
 }   
 
@@ -53,14 +53,10 @@
     color: black;
 }
 
-
-
   @media only screen and (max-width: 600px) {
 
     .numbersDisplay{
-        
-        display: none;
-        
+       display: none;
     }
     .numbersDisplay h1 span{
         font-size: 5px;
@@ -84,10 +80,10 @@
     }
     #shanepix{
         position: absolute;
-        bottom: -300px;
         right: -60px;
+        top: -170px;
         
     }
-    
+     
   }
 

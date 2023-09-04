@@ -5,11 +5,13 @@ import Gymwebsite from '../images/GymWebsite.png';
 import BankWebsite from '../images/Bank website.png';
 import Ehailling from '../images/E-halling.png';
 import load from '../images/projectsLoad.gif';
+import projectsbackgroundimg from '../images/projectsbackgroundimg.gif';
 
 
 const Projects = () => {
 return (
 	<>
+	 <div className="Background-screen-saver" style={{ backgroundImage: `url(${projectsbackgroundimg})`,backgroundRepeat: 'no-repeat',backgroundPosition:'center',backgroundSize:'cover'}}>
 	<h1 class="Projects-haeding">My Latest Projects</h1>
 	<img src={load} alt="" id="Loadpic"/>
 	<div class="team animate__animated animate__bounceInUp">
@@ -67,7 +69,7 @@ return (
  </div>
 
  
-	
+ </div>
  </>
 
 	

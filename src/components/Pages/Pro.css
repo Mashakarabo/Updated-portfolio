@@ -97,6 +97,10 @@ display: flex;
 animation-duration: 2s;
 }
 
+.loading-landing-page:active{
+    background-color: red;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -106,7 +110,6 @@ animation-duration: 2s;
     
     }
    
-
     .second-switch{
     display: grid;
     margin: 10px;

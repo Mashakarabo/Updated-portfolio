@@ -17,23 +17,17 @@ export const SidebarData = [
 	
 },
 {
-	title: "Contact Me.",
-	path: "/contact",
-	
-},
-
-{
 	title: "Projects.",
 	path: "/Projects",
 	
 },
 {
-	title: "Admin.",
-	path: "/SignIn",
-},
-{
+	title: "Contact Me.",
+	path: "/contact",
 	
-	path: "/Create",
 },
+
+
+
 
 ];
