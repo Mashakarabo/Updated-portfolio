@@ -1,10 +1,10 @@
 import React from 'react';
 import './ContactMe.css';
 import 'animate.css';
-import loc from '../images/location.png';
-import emaill from '../images/email.png';
-import Phn from '../images/phone.png';
-import contactGif from '../images/contact.gif';
+import lokation from '../images/lokation.png';
+import kall from '../images/kall.png';
+import mail from '../images/mail.png';
+import networkwithpins from '../images/skillsPagebackground.gif';
 import { useState } from 'react';
 import {db} from '../firebase';
 import { addDoc, collection } from 'firebase/firestore';
@@ -46,71 +46,89 @@ const Contact = () => {
 
 return (
 	<>
+    <div className="Backgroundscreensaver" style={{ backgroundImage: `url(${networkwithpins})`,backgroundSize:'cover'}}>
+    <section>
+        <div className="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src={lokation} alt="" /></span>
+                            <span>
+                                10 Amstel Road<br />
+                                Maitlant, Cape Town<br />
+                                7405
+                            </span>
+                           
+                        </li>
+                        <li>
+                            <span><img src={mail} alt="" /></span>
+                            <span>karabo.masha@<br />younglings.africa</span>
+                        </li>
+                        <li>
+                            <span><img src={kall} alt="" /></span>
+                            <span>081-785-5654</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="socialIcon">
+                    <li><a href="#"><img src="img/1.png" alt="" /></a></li>
+                    <li><a href="#"><img src="img/2.png" alt="" /></a></li>
+                    <li><a href="#"><img src="img/3.png" alt="" /></a></li>
+                    <li><a href="#"><img src="img/4.png" alt="" /></a></li>
+                    <li><a href="#"><img src="img/5.png" alt="" /></a></li>
+                </ul>
+            </div>
 
-	<h1 className="Contact-heading">Contact Me.</h1>
-  <div class="container animate__animated animate__zoomIn">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <img src={loc} alt="" width={20} className="loc"/>
-          <div class="topic">Address</div>
-          <div class="text-one">lower long street</div>
-          <div class="text-two">Cape Town</div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+
+                <form onSubmit={handleSubmit} >
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" id="" required 
+                        value={name}
+                        onChange={(event)=>{
+                          setName(event.target.value)
+                        }} />
+                        <span>Name</span>
+                    </div>
+
+
+                    <div class="inputBox w50">
+                        <input type="email" name="" id="" required 
+                         value={email}
+                         onChange={(event)=>{
+                           setEmail(event.target.value)
+                         }} />
+                        <span>Email</span>
+                    </div>
+
+
+                    <div class="inputBox w100">
+                        <textarea name="" id="" required 
+                         value={message} 
+                         onChange={(event)=>{
+                           setMessage(event.target.value)
+                         }}/>
+                        <span>Write Your Message Here.</span>
+                    </div>
+
+                    <div class="inputBox w100">
+                        <button disabled={!isCaptchaSuccessful} onClick={handleSubmit}>Send</button>
+                    </div>
+                    <div className='recaptch'>
+                    <ReCAPTCHA
+                    sitekey="6LeW-dInAAAAAH-rTg6sbtctOjjhvaMfr294T8mI" onChange={onChange} />
+                    </div>
+                </div>
+                </form>
+            </div>
         </div>
-        <div class="phone details">
-          <img src={Phn} alt="" width={20} className="Phn"/>
-          <div class="topic">Phone</div>
-          <div class="text-one">07156736082</div>
-          <div class="text-two">0817866564</div>
-        </div>
-        <div class="email details">
-          <img src={emaill} alt="" width={20} className="email" /> 
-          <div class="topic">Email</div>
-          <div class="text-two">mashakarabo10@gmail.com</div>
-        </div>
+        
+    </section>
       </div>
-      <div class="right-side">
-        <div class="topic-text">Send Me a message</div>
-        <p>Dont hesitate to contact me.</p>
-
-
-
-      <form onSubmit={handleSubmit} >
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name" name="from_name" 
-          value={name}
-          onChange={(event)=>{
-            setName(event.target.value)
-          }} />
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email" name="user_email"
-          value={email}
-          onChange={(event)=>{
-            setEmail(event.target.value)
-          }}  />
-        </div>
-        <div class="input-box message-box">
-          <input type="textarea" placeholder="Enter your message" name="message"
-          value={message} 
-          onChange={(event)=>{
-            setMessage(event.target.value)
-          }} />
-        </div>
-        <div className='recaptch'>
-        <ReCAPTCHA
-          sitekey="6LeW-dInAAAAAH-rTg6sbtctOjjhvaMfr294T8mI" onChange={onChange} />
-       </div>
-        
-        <button disabled={!isCaptchaSuccessful} onClick={handleSubmit}>Send</button>
-        
-        
-      </form>
-    </div>
-    </div>
-  </div>
-  <img src={contactGif} alt="" id="contact-gif-move"/>
-
   </>
 );
 };

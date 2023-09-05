@@ -69,12 +69,12 @@ return (
         <h1>Junior Software Developer</h1>
     </div>
     <div className="clickables-one">
-        <input type="button" value="Download Cv" onClick={onButtonClick}/>
+        <input type="button" value="Download Cv" onClick={onButtonClick} id="btninput"/>
     </div>
 
     <div className="clickables-two">
         
-       <a href="/contact"><input type="button" value="Get In Touch" /></a> 
+       <a href="/contact"><input type="button" value="Get In Touch" id="btninput" /></a> 
        
         
     </div>

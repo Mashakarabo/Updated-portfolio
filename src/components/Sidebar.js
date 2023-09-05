@@ -12,7 +12,7 @@ import './sidebar.css';
 
 
 const Nav = styled.div`
-background: teal;
+background: black;
 height: 80px;
 display: flex;
 justify-content: flex-start;
