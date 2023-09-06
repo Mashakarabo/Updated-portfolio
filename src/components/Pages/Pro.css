@@ -1,160 +1,144 @@
-
-body{
-    background-color: white
+body {
+  background-color: white;
 }
 
-.hidden-content{
-    display: none;
+.hidden-content {
+  display: none;
 }
 
-.Content{
-position: relative;
-top: 22%;
-left: -16%;
+.Content {
+  position: relative;
+  top: 22%;
+  left: -16%;
 }
 
-.names{
-position: absolute;
-top: 25%;
-right: 10%;
-font-size: 15px;
-font-style: normal;
+.names {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-size: 15px;
+  font-style: normal;
 }
 
-.clickables-one{
-position: absolute;
-top: 78%;
-right: 17%;
+.clickables-one {
+  position: absolute;
+  top: 78%;
+  right: 17%;
 }
-.clickables-two{
-position: absolute;
-top: 78%;
-right: 35%;
+.clickables-two {
+  position: absolute;
+  top: 78%;
+  right: 35%;
 }
 
-#btninput{
-padding: 10px;
-border-radius: 30px;
-background-color: black;
-color: white;
-box-shadow:
-    5px 5px red,
-    10px 10px black,
-    inset 5px 5px white,
+#btninput {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px red, 10px 10px black, inset 5px 5px white,
     inset 10px 10px black;
-width: 130%;
+  width: 130%;
 }
 
-#btninput:hover{
-    box-shadow: 1px 1px 2px 2px yellow;
-    text-transform: uppercase;
+#btninput:hover {
+  box-shadow: 1px 1px 2px 2px yellow;
+  text-transform: uppercase;
 }
 
-#myicon{
-width: 30%;
-position: relative;
-top: 70%;
-left: 50%;
-
+#myicon {
+  width: 30%;
+  position: relative;
+  top: 70%;
+  left: 50%;
 }
 
-#followMoo{
-width: 10%;
-position: absolute;
-top: 87%;
-left: 5%;
-display: none;
+#followMoo {
+  width: 10%;
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  display: none;
 }
 
-
-.switch-to-home{
-display: flex;
-height: 810px;
+.switch-to-home {
+  display: flex;
+  height: 810px;
 }
 
-.first-switch{
-
-width: 20%;
-margin: 5px;
-padding: 5px;
-display: flex;
-justify-content: space-between;
-position: relative;
-left: 60%;
-bottom: 20%;
+.first-switch {
+  width: 20%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 60%;
+  bottom: 20%;
 }
 
-#shanepic{
-position: relative;
-right: 10%;
-top: 8%;
-background-color: rgba(255, 255, 0, 0.541);
-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+#shanepic {
+  position: relative;
+  right: 10%;
+  top: 8%;
+  background-color: rgba(255, 255, 0, 0.541);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-.second-switch{
-width: 80%;
-text-align: center;
-display: flex;
-
+.second-switch {
+  width: 80%;
+  text-align: center;
+  display: flex;
 }
 
-.animate__fadeInRight{
-animation-duration: 2s;
+.animate__fadeInRight {
+  animation-duration: 2s;
 }
 
-.loading-landing-page:active{
-    background-color: red;
+.loading-landing-page:active {
+  background-color: red;
 }
-
-
 
 @media only screen and (max-width: 600px) {
- 
-    .first-switch{
-        display: none;
-    
-    }
-   
-    .second-switch{
+  .first-switch {
+    display: none;
+  }
+
+  .second-switch {
     display: grid;
     margin: 10px;
-    background-color: white
-       
-    }
-    .pic{
+    background-color: white;
+  }
+  .pic {
     position: relative;
     right: 30px;
     bottom: 5%;
-        
-    }
+  }
 
-    #shanepic{
+  #shanepic {
     position: relative;
     top: 4%;
     right: 14%;
     width: 180%;
-    }
-    .names{
+  }
+  .names {
     position: absolute;
     top: 500px;
     right: -10%;
     font-size: 100%;
     width: 100%;
-        
-    }
+  }
 
-    .clickables-one{
+  .clickables-one {
     display: none;
-    }
-    .clickables-two{
+  }
+  .clickables-two {
     position: absolute;
     top: 120%;
     left: 120px;
+  }
 
-    }
-    
-    .Content{
+  .Content {
     position: absolute;
     top: 530px;
     left: 10px;
@@ -163,19 +147,12 @@ animation-duration: 2s;
     background-color: rgba(206, 255, 196, 0.221);
     color: black;
     border-radius: 10px;
-        
-    }
-    .hidden-content{
-        display: flex;
-        position: absolute;
-        bottom: 10%;
-        width: 60%;
-        left: 16%;
-        
-    }
-
   }
-
-
-
-
+  .hidden-content {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    left: 16%;
+  }
+}

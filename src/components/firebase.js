@@ -7,9 +7,8 @@ const firebaseConfig = {
   projectId: "my-contact-data",
   storageBucket: "my-contact-data.appspot.com",
   messagingSenderId: "333120748631",
-  appId: "1:333120748631:web:6a5df43a05a7f5c0737712"
+  appId: "1:333120748631:web:6a5df43a05a7f5c0737712",
 };
-
 
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

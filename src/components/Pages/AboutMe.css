@@ -1,89 +1,84 @@
-.AboutMe-content{
-    display: flex;
-    justify-content: space-around;
-    height: 810px;
-    padding: 10px;
-    
+.AboutMe-content {
+  display: flex;
+  justify-content: space-around;
+  height: 810px;
+  padding: 10px;
 }
 
-.AboutMe-content p{
-    padding: 17%;
+.AboutMe-content p {
+  padding: 17%;
 }
 
-.AboutMe-content .bio{
-    width: 100%;
+.AboutMe-content .bio {
+  width: 100%;
 }
 
-#bgdots{
-    position: relative;
-    top: 5%;
-    right: 129%;
-    width: 100px
+#bgdots {
+  position: relative;
+  top: 5%;
+  right: 129%;
+  width: 100px;
 }
-#shanepix{
-    position: relative;
-    top: 70px
-}   
+#shanepix {
+  position: relative;
+  top: 70px;
+}
 
-.animate__fadeInDown{
-   animation-duration: 3s; 
+.animate__fadeInDown {
+  animation-duration: 3s;
+}
+
+.numbersDisplay {
+  width: 80%;
+  position: absolute;
+  top: 83%;
+  right: 21%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bio h1 {
+  color: teal;
+  position: relative;
+  bottom: 10px;
+}
+
+.numbersDisplay h1 {
+  color: teal;
+  padding: 10px;
+  font-size: large;
+}
+.numbersDisplay span {
+  color: black;
+}
+
+/*Media Queries for small devices */
+
+@media only screen and (max-width: 600px) {
+  .numbersDisplay {
+    display: none;
+  }
+  .numbersDisplay h1 span {
+    font-size: 5px;
   }
 
-.numbersDisplay{
-    width: 80%;
+  .AboutMe-content {
+    display: block;
+  }
+
+  .bio {
+    font-size: 10px;
+    position: relative;
+    background-color: rgba(206, 255, 196, 0.221);
+  }
+
+  #aboutmeheading {
     position: absolute;
-    top: 83%;
-    right: 21%;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-.bio h1{
-    color: teal;
-    position: relative;
-    bottom: 10px;
-}
-
-.numbersDisplay h1{
-    color: teal;
-    padding: 10px;
-    font-size:large;
-}
-.numbersDisplay span{
-    color: black;
-}
-
-  @media only screen and (max-width: 600px) {
-
-    .numbersDisplay{
-       display: none;
-    }
-    .numbersDisplay h1 span{
-        font-size: 5px;
-    }
-
-    .AboutMe-content{
-        display: block;
-    }
-
-    .bio{
-        
-        font-size: 10px;
-        position: relative;
-        background-color: rgba(206, 255, 196, 0.221);
-    }
-
-    #aboutmeheading{
-        position: absolute;
-        left: 60px;
-        top: 20px;
-    }
-    #shanepix{
-        position: absolute;
-        right: -60px;
-        top: -170px;
-        
-    }
-     
+    left: 60px;
+    top: 20px;
   }
-
+  #shanepix {
+    position: absolute;
+    right: -60px;
+    top: -170px;
+  }
+}
