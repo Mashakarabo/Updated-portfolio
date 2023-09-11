@@ -180,6 +180,13 @@ button {
   font-size: 20px;
 }
 
+.animate__slideInLeft {
+  animation-duration: 3s;
+}
+.animate__slideInUp {
+  animation-duration: 3s;
+}
+
 @media only screen and (max-width: 600px) {
   .contactInfo {
     position: absolute;

@@ -15,28 +15,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_d5do3yi",
-        "template_lmz8rci",
-        form.current,
-        "hLIwSynG0OWWal0qB"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   //google Captcha codes
   const [isCaptchaSuccessful, setIsCaptchaSuccess] = React.useState(false);
@@ -61,6 +40,25 @@ const Contact = () => {
     setEmail("");
     setMessage("");
     alert("Your Data was successfully sent!!");
+    //The above code ends here
+
+    // sending email to gmail using email.js
+
+    emailjs
+      .sendForm(
+        "service_d5do3yi",
+        "template_lmz8rci",
+        form.current,
+        "hLIwSynG0OWWal0qB"
+      )
+      .then(
+        (result) => {
+          console.log('email send!!');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     //The above codes ends here
   };
 
@@ -75,7 +73,7 @@ const Contact = () => {
       >
         <section>
           <div className="container">
-            <div class="contactInfo">
+            <div class="contactInfo animate__animated  animate__slideInLeft">
               <div>
                 <h2>Contact Info</h2>
                 <ul class="info">
@@ -111,10 +109,10 @@ const Contact = () => {
               </div>
             </div>
 
-            <div class="contactForm">
+            <div class="contactForm animate__animated animate__slideInUp">
               <h2>Send a Message</h2>
 
-              <form ref={form} onSubmit={sendEmail}>
+              <form ref={form}>
                 <div class="formBox">
                   <div class="inputBox w50">
                     <input
