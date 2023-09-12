@@ -21,6 +21,8 @@ const Projects = () => {
       >
         <h1 class="Projects-haeding">My Latest Projects</h1>
         <img src={load} alt="" id="Loadpic" />
+       
+       
         <div class="team animate__animated animate__bounceInUp">
           <div class="card">
             <div class="side side1">

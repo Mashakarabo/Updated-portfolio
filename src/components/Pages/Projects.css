@@ -5,6 +5,7 @@
   width: 1200px;
   position: relative;
   bottom: 130px;
+  
 }
 .team .card {
   position: relative;
@@ -74,7 +75,7 @@
 .team .card .side.side2 .img-info a {
   padding: 5px 15px;
   border-radius: 50px;
-  background: #0784f8;
+  background: teal;
   color: #fff;
   margin: 20px 0 0;
   display: inline-block;
@@ -94,6 +95,7 @@
 .Projects-haeding {
   position: relative;
   padding: 5%;
+  color: teal;
 }
 #Loadpic {
   position: absolute;
@@ -105,6 +107,8 @@
 @media only screen and (max-width: 600px) {
   .team {
     display: grid;
+    position: relative;
+    bottom: 5px;
   }
 
   #Loadpic {

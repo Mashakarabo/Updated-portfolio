@@ -6,7 +6,8 @@ import { Skills } from "./components/Pages/Skills";
 import Contact from "./components/Pages/ContactMe";
 import Projects from "./components/Pages/Projects";
 import Pro from "./components/Pages/Pro";
-import SignIn from "./components/Pages/SignIn";
+import Loadhome from "./components/Pages/Pro";
+
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Pro />} />
+          <Route path="/" element={<Loadhome/>} />
+          <Route path="/Pro" element={<Pro/>} />
           <Route path="/about-Me" element={<AboutMe />} />
           <Route path="/Skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/SignIn/" element={<SignIn />} />
+          <Route path="/Projects" element={<Projects />} />    
         </Routes>
       </Router>
     </>
