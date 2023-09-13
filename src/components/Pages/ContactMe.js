@@ -166,7 +166,7 @@ const Contact = () => {
                   </div>
                   <div className="recaptch">
                     <ReCAPTCHA
-                      sitekey="6LfG1RwoAAAAABTCllcTsMcjETIAzzg2H49eVpG0"
+                      sitekey="6LfG1RwoAAAAABTCllcTsMcjETIAzzg2H49eVpG0 "
                       onChange={onChange}
                     />
                   </div>
