@@ -40,32 +40,38 @@ const DropdownLink = styled(Link)`
   }
 `;
 
-const SubMenu = ({ item }) => {
+const SubMenu = ({ item, closeSidebar }) => {
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
 
+  const handleLinkClick = () => {
+    // Close the sidebar by calling the closeSidebar function
+    closeSidebar();
+
+    // Toggle the subnav only if subNav exists
+    if (item.subNav) {
+      showSubnav();
+    }
+  };
+
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <SidebarLink to={item.path} onClick={handleLinkClick}>
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
         <div>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
+          {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
         </div>
       </SidebarLink>
       {subnav &&
-        item.subNav.map((item, index) => {
+        item.subNav.map((subItem, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
-              {item.icon}
-              <SidebarLabel>{item.title}</SidebarLabel>
+            <DropdownLink to={subItem.path} key={index}>
+              {subItem.icon}
+              <SidebarLabel>{subItem.title}</SidebarLabel>
             </DropdownLink>
           );
         })}

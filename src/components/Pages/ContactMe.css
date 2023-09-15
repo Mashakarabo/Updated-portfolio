@@ -7,6 +7,7 @@ section {
   min-height: 100vh;
 }
 
+
 .container {
   position: relative;
   min-width: 1100px;
@@ -188,6 +189,8 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+
+ 
   .contactInfo {
     position: absolute;
     left: 35%;

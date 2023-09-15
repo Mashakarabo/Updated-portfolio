@@ -64,13 +64,16 @@ const Contact = () => {
 
   return (
     <>
+    
       <div
+      
         className="Backgroundscreensaver"
         style={{
           backgroundImage: `url(${networkwithpins})`,
           backgroundSize: "cover",
         }}
       >
+        
         <section>
           <div className="container">
             <div class="contactInfo animate__animated  animate__slideInLeft">

@@ -1,7 +1,7 @@
 .AboutMe-content {
   display: flex;
   justify-content: space-around;
-  height: 810px;
+  height: 500px;
   padding: 10px;
 }
 
@@ -11,6 +11,10 @@
 
 .AboutMe-content .bio {
   width: 100%;
+}
+
+.Numbershidden-content{
+  display: none;
 }
 
 #bgdots {
@@ -54,6 +58,11 @@
 /*Media Queries for small devices */
 
 @media only screen and (max-width: 600px) {
+
+  .About-picture{
+    display: none;
+  }
+  
   .numbersDisplay {
     display: none;
   }
@@ -80,5 +89,8 @@
     position: absolute;
     right: -60px;
     top: -170px;
+  }
+  .Numbershidden-content{
+    display: block;
   }
 }

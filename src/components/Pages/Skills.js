@@ -24,6 +24,7 @@ export const Skills = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
+          height: "500px",
         }}
       >
         <div class="skills-section">

@@ -29,6 +29,13 @@ return (
 			    evolving demands of client.
 			</p>
 		</div>
+        <div className="Numbershidden-content">
+        
+        <p>1+<em style={{fontSize:'30px',color:'teal'}}>Experince</em></p>
+        <p>2+<em style={{fontSize:'20px',color:'teal'}}>Live Projects</em></p>
+        <p>16+<em style={{fontSize:'10px',color:'teal'}}>worked On</em></p>
+        
+    </div>
 
 		<div className="About-picture animate__animated animate__fadeInDown">
 			<img src={newaboutmepic} alt="" id="shanepix" />
@@ -63,7 +70,8 @@ return (
             </h1>
         </div>
     </div>
-
+   
+    
     </div>
 	</>
 );
