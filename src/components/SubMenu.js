@@ -46,10 +46,10 @@ const SubMenu = ({ item, closeSidebar }) => {
   const showSubnav = () => setSubnav(!subnav);
 
   const handleLinkClick = () => {
-    // Close the sidebar by calling the closeSidebar function
-    closeSidebar();
+   
+    closeSidebar(); 
 
-    // Toggle the subnav only if subNav exists
+    
     if (item.subNav) {
       showSubnav();
     }
@@ -78,5 +78,4 @@ const SubMenu = ({ item, closeSidebar }) => {
     </>
   );
 };
-
 export default SubMenu;

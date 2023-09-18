@@ -31,6 +31,9 @@
 .animate__fadeInDown {
   animation-duration: 3s;
 }
+.animate__slideInLeft{
+  animation-duration: 3s;
+}
 
 .numbersDisplay {
   width: 80%;

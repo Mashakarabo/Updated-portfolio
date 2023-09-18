@@ -8,6 +8,11 @@ import load from "../images/projectsLoad.gif";
 import projectsbackgroundimg from "../images/projectsbackgroundimg.gif";
 
 const Projects = () => {
+
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
+
   return (
     <>
       <div
@@ -37,9 +42,10 @@ const Projects = () => {
                   This is a gym website that showcases the types of workouts you
                   should do and types of food you should eat.
                 </p>
-                <a href="https://mashakarabo.github.io/Gymapplication/">
-                  View site
-                </a>
+                
+                <button role="link" id="projectbtn"
+               onClick={() => openInNewTab("https://mashakarabo.github.io/Gymapplication/")}>ViewSite
+               </button>
               </div>
             </div>
           </div>
@@ -58,9 +64,10 @@ const Projects = () => {
                   shuttles business, people are able to book thier luxury
                   transportation.
                 </p>
-                <a href="https://64ae6da95c5ca804f4b80c61--heartfelt-truffle-3febd8.netlify.app/">
-                  View site
-                </a>
+                
+                <button role="link" id="projectbtn"
+               onClick={() => openInNewTab("https://64ae6da95c5ca804f4b80c61--heartfelt-truffle-3febd8.netlify.app/")}>ViewSite
+               </button>
               </div>
             </div>
             <hr />
@@ -78,9 +85,10 @@ const Projects = () => {
                   This is a simple Bank Website that provides the exposure to
                   the bank to people all over the world.
                 </p>
-                <a href="https://64ae91082562b81be790ec19--clever-mermaid-534bac.netlify.app/">
-                  View site
-                </a>
+                
+                <button role="link" id="projectbtn"
+               onClick={() => openInNewTab("https://64ae91082562b81be790ec19--clever-mermaid-534bac.netlify.app/")}>ViewSite
+               </button>
               </div>
             </div>
           </div>

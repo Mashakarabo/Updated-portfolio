@@ -190,10 +190,12 @@ button {
 
 @media only screen and (max-width: 600px) {
 
- 
+  
+
   .contactInfo {
     position: absolute;
     left: 35%;
+    
   }
 
   .contactForm {

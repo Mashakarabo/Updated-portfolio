@@ -10,6 +10,9 @@ import ScreenSaver from "../images/backgroundscreensaver.gif";
 import "animate.css";
 
 const Pro = () => {
+
+ 
+
   const onButtonClick = () => {
     fetch("karabo Masha resume.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -37,7 +40,7 @@ const Pro = () => {
             <a href="0817855654">
               <img src={whatsappme} alt="" id="myicon" />
             </a>
-            <a href="https://github.com/Mashakarabo">
+            <a href="https://github.com/Mashakarabo" >
               <img src={githupme} alt="" id="myicon" />
             </a>
             <a href="https://www.linkedin.com/in/karabo-masha-aa91b4196/">

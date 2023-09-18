@@ -29,7 +29,7 @@ return (
 			    evolving demands of client.
 			</p>
 		</div>
-        <div className="Numbershidden-content">
+        <div className="Numbershidden-content animate__animated animate__slideInLeft">
         
         <p>1+<em style={{fontSize:'30px',color:'teal'}}>Experince</em></p>
         <p>2+<em style={{fontSize:'20px',color:'teal'}}>Live Projects</em></p>
@@ -44,7 +44,7 @@ return (
 		
 	
 	</div>
-	<div className="numbersDisplay">
+	<div className="numbersDisplay animate__animated animate__slideInLeft">
         <div className="Experince">
             <h1>
                     1+<br/>
@@ -53,7 +53,7 @@ return (
                     </span>
             </h1>
         </div>
-        <div className="Live-Projects">
+        <div className="Live-Projects animate__animated animate__slideInLeft">
             <h1>
                 2+<br/>
                 <span>
@@ -61,7 +61,7 @@ return (
                 </span>
             </h1>
         </div>
-        <div className="WorkedON">
+        <div className="WorkedON animate__animated animate__slideInLeft">
             <h1>
                 16+<br/>
                 <span>

@@ -154,7 +154,7 @@
 
 @media screen and (max-width: 650px) {
   .skills-container {
-    grid-template-columns: 2fr;
+    grid-template-columns: auto auto;
     padding: 2rem 50px;
   }
   #skillsheading {

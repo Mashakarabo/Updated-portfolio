@@ -53,7 +53,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log('email send!!');
+          console.log("email send!!");
         },
         (error) => {
           console.log(error.text);
@@ -64,16 +64,13 @@ const Contact = () => {
 
   return (
     <>
-    
       <div
-      
         className="Backgroundscreensaver"
         style={{
           backgroundImage: `url(${networkwithpins})`,
           backgroundSize: "cover",
         }}
       >
-        
         <section>
           <div className="container">
             <div class="contactInfo animate__animated  animate__slideInLeft">
@@ -85,9 +82,9 @@ const Contact = () => {
                       <img src={lokation} alt="" />
                     </span>
                     <span>
-                      10 Amstel Road
+                      South africa
                       <br />
-                      Maitlant, Cape Town
+                      Cape Town
                       <br />
                       7405
                     </span>
@@ -128,6 +125,7 @@ const Contact = () => {
                         setName(event.target.value);
                       }}
                     />
+
                     <span>Name</span>
                   </div>
 
@@ -142,6 +140,7 @@ const Contact = () => {
                         setEmail(event.target.value);
                       }}
                     />
+
                     <span>Email</span>
                   </div>
 
@@ -155,6 +154,7 @@ const Contact = () => {
                         setMessage(event.target.value);
                       }}
                     />
+
                     <span>Write Your Message Here.</span>
                   </div>
 

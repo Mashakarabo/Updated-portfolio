@@ -1,7 +1,11 @@
-html, body {
-  height: 100%;
-  width: 100%;
+.team{
+  height: 400px;
 }
+
+#projectbtn{
+  width: 40%;
+}
+
 .team {
   display: flex;
   justify-content: space-between;
@@ -9,7 +13,6 @@ html, body {
   width: 1200px;
   position: relative;
   bottom: 130px;
-  
 }
 .team .card {
   position: relative;
@@ -109,13 +112,22 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
+
+  * {
+    margin-left: 1px;
+    
+  }
   .team {
     display: grid;
     position: relative;
-    bottom: 5px;
+    bottom: 170px;
+    
   }
 
   #Loadpic {
     display: none;
   }
+  
+ 
+ 
 }

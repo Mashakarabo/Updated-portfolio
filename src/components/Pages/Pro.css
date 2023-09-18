@@ -109,7 +109,11 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-  
+  .BackgroundSrcn{
+    max-height: 80vh;
+    
+   }
+
   .first-switch {
     display: none;
   }
