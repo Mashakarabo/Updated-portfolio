@@ -24,12 +24,12 @@ export const Skills = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "500px",
+          height: "620px",
         }}
       >
         <div class="skills-section">
           <div class="skills-header">
-            <h1 id="skillsheading" style={{ color: "red" }}>
+            <h1 id="skillsheading" style={{ color: "teal" }}>
               My Skills{" "}
             </h1>
           </div>

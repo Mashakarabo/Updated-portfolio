@@ -1,11 +1,9 @@
 body {
   background-color: white;
-   
 }
 
-.BackgroundSrcn{
- height: 600px;
- 
+.BackgroundSrcn {
+  height: 600%;
 }
 
 .hidden-content {
@@ -108,11 +106,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-
-  .BackgroundSrcn{
+  .BackgroundSrcn {
     max-height: 80vh;
-    
-   }
+  }
 
   .first-switch {
     display: none;
@@ -168,5 +164,15 @@ body {
     bottom: -5px;
     width: 60%;
     left: 16%;
+  }
+}
+
+/*  */
+
+@media only screen and (max-width: 667px) {
+  .clickables-two {
+    position: absolute;
+    top: 880px;
+    left: 100px;
   }
 }

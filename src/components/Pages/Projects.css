@@ -1,8 +1,8 @@
-.team{
+.team {
   height: 400px;
 }
 
-#projectbtn{
+#projectbtn {
   width: 40%;
 }
 
@@ -79,7 +79,7 @@
   padding: 0;
   color: #fff;
 }
-.team .card .side.side2 .img-info a {
+.team .card .side.side2 .img-info button {
   padding: 5px 15px;
   border-radius: 50px;
   background: teal;
@@ -112,22 +112,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-
   * {
     margin-left: 1px;
-    
   }
   .team {
     display: grid;
     position: relative;
     bottom: 170px;
-    
   }
 
   #Loadpic {
     display: none;
   }
-  
- 
- 
 }

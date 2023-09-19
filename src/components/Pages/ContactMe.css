@@ -7,7 +7,6 @@ section {
   min-height: 100vh;
 }
 
-
 .container {
   position: relative;
   min-width: 1100px;
@@ -178,7 +177,11 @@ section {
 }
 button {
   color: white;
+  background-color: teal;
+  width: 100%;
   font-size: 20px;
+  height: 4px;
+  border-radius: 10px;
 }
 
 .animate__slideInLeft {
@@ -189,13 +192,9 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
-
-  
-
   .contactInfo {
     position: absolute;
     left: 35%;
-    
   }
 
   .contactForm {

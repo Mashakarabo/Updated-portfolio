@@ -48,8 +48,6 @@ const Sidebar = () => {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-
-
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -77,7 +75,9 @@ const Sidebar = () => {
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} closeSidebar={showSidebar} />;
+              return (
+                <SubMenu item={item} key={index} closeSidebar={showSidebar} />
+              );
             })}
           </SidebarWrap>
         </SidebarNav>

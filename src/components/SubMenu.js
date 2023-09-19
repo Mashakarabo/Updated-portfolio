@@ -46,10 +46,8 @@ const SubMenu = ({ item, closeSidebar }) => {
   const showSubnav = () => setSubnav(!subnav);
 
   const handleLinkClick = () => {
-   
-    closeSidebar(); 
+    closeSidebar();
 
-    
     if (item.subNav) {
       showSubnav();
     }
@@ -63,7 +61,11 @@ const SubMenu = ({ item, closeSidebar }) => {
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
         <div>
-          {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
+          {item.subNav && subnav
+            ? item.iconOpened
+            : item.subNav
+            ? item.iconClosed
+            : null}
         </div>
       </SidebarLink>
       {subnav &&

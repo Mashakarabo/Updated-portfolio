@@ -2,17 +2,14 @@ import React from "react";
 import "./Pro.css";
 import "animate.css";
 import ShanePic from "../images/karabo.png";
-import whatsappme from "../images/whatsUp.png";
-import linkedinme from "../images/linkedin.png";
-import githupme from "../images/github.png";
+import whatsappme from "../images/replaceWhatsapp.png";
+import linkedinme from "../images/replaceLi.png";
+import githupme from "../images/replaceGH.png";
 import followme from "../images/followMe.gif";
 import ScreenSaver from "../images/backgroundscreensaver.gif";
 import "animate.css";
 
 const Pro = () => {
-
- 
-
   const onButtonClick = () => {
     fetch("karabo Masha resume.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -37,10 +34,10 @@ const Pro = () => {
       >
         <div className="switch-to-home ">
           <div className="first-switch">
-            <a href="0817855654">
+            <a href="https://api.whatsapp.com/send/?phone=27817855654&text&type=phone_number&app_absent=0">
               <img src={whatsappme} alt="" id="myicon" />
             </a>
-            <a href="https://github.com/Mashakarabo" >
+            <a href="https://github.com/Mashakarabo">
               <img src={githupme} alt="" id="myicon" />
             </a>
             <a href="https://www.linkedin.com/in/karabo-masha-aa91b4196/">

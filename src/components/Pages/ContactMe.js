@@ -39,7 +39,8 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-    alert("Your Data was successfully sent!!");
+    alert('data successfully sent!!!');
+
     //The above code ends here
 
     // sending email to gmail using email.js

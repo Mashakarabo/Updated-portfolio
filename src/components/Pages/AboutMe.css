@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-.Numbershidden-content{
+.Numbershidden-content {
   display: none;
 }
 
@@ -31,7 +31,7 @@
 .animate__fadeInDown {
   animation-duration: 3s;
 }
-.animate__slideInLeft{
+.animate__slideInLeft {
   animation-duration: 3s;
 }
 
@@ -61,11 +61,10 @@
 /*Media Queries for small devices */
 
 @media only screen and (max-width: 600px) {
-
-  .About-picture{
+  .About-picture {
     display: none;
   }
-  
+
   .numbersDisplay {
     display: none;
   }
@@ -93,7 +92,206 @@
     right: -60px;
     top: -170px;
   }
-  .Numbershidden-content{
+  .Numbershidden-content {
     display: block;
+    
+  }
+
+  /* counter of experince*/
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 1;
+    inherits: false;
+  }
+  #numbercounter {
+    animation: counter 5s alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+  
+  #numbercounter::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    0% {
+      --num: 0;
+    }
+    
+    100% {
+      --num: 1;
+    }
+  }
+  /* code ends here */
+
+  /* second counter */
+
+  @property --number {
+    syntax: "<integer>";
+    initial-value: 5;
+    inherits: false;
+  }
+  #secondcounter {
+    animation: counters 5s alternate ease-in-out;
+    counter-reset: number var(--number);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+
+  #secondcounter::after {
+    content: counter(number);
+  }
+
+  @keyframes counters {
+    0% {
+      --number: 0;
+    }
+   
+    100% {
+      --number: 5;
+    }
+  }
+  /* code ends here */
+
+  /* third counter start here */
+
+  @property --numbers {
+    syntax: "<integer>";
+    initial-value: 20;
+    inherits: false;
+  }
+  #thirdcounter {
+    animation: count 5s  alternate ease-in-out;
+    counter-reset: numbers var(--numbers);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+
+  #thirdcounter::after {
+    content: counter(numbers);
+  }
+
+  @keyframes count {
+    0% {
+      --numbers: 0;
+    }
+    
+    100% {
+      --numbers: 20;
+    }
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  /* counter of experince*/
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 1;
+    inherits: false;
+  }
+  #numbercounter {
+    animation: counter 5s alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+
+  #numbercounter::after {
+    content: counter(num);
+  }
+
+  @keyframes counter {
+    0% {
+      --num: 0;
+    }
+   
+    100% {
+      --num: 1;
+    }
+  }
+  /* code ends here */
+
+  /* second counter */
+
+  @property --number {
+    syntax: "<integer>";
+    initial-value: 5;
+    inherits: false;
+  }
+  #secondcounter {
+    animation: counters 5s  alternate ease-in-out;
+    counter-reset: number var(--number);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+
+  #secondcounter::after {
+    content: counter(number);
+  }
+
+  @keyframes counters {
+    0% {
+      --number: 0;
+    }
+  
+    100% {
+      --number: 5;
+    }
+  }
+  /* code ends here */
+
+  /* third counter start here */
+
+  @property --numbers {
+    syntax: "<integer>";
+    initial-value: 20;
+    inherits: false;
+  }
+  #thirdcounter {
+    animation: count 5s  alternate ease-in-out;
+    counter-reset: numbers var(--numbers);
+    font: 800 40px system-ui;
+    padding: 2rem;
+    position: relative;
+    bottom: 30px;
+    color: rgba(0, 0, 0, 0.458);
+    font-size: 60px;
+  }
+
+  #thirdcounter::after {
+    content: counter(numbers);
+  }
+
+  @keyframes count {
+    0% {
+      --numbers: 0;
+    }
+    
+    100% {
+      --numbers: 20;
+    }
   }
 }
