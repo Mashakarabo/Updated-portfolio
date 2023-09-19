@@ -88,6 +88,7 @@
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
+  height: 50px;
 }
 
 .team .card .side.side2 .img-info a:hover {
