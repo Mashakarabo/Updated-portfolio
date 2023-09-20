@@ -17,6 +17,8 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const form = useRef();
 
+  
+
   //google Captcha codes
   const [isCaptchaSuccessful, setIsCaptchaSuccess] = React.useState(false);
 

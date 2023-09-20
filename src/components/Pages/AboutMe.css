@@ -105,7 +105,7 @@
     inherits: false;
   }
   #numbercounter {
-    animation: counter 5s alternate ease-in-out;
+    animation: counter 10s alternate ease-in-out;
     counter-reset: num var(--num);
     font: 800 40px system-ui;
     padding: 2rem;
@@ -138,7 +138,7 @@
     inherits: false;
   }
   #secondcounter {
-    animation: counters 5s alternate ease-in-out;
+    animation: counters 10s alternate ease-in-out;
     counter-reset: number var(--number);
     font: 800 40px system-ui;
     padding: 2rem;
@@ -171,7 +171,7 @@
     inherits: false;
   }
   #thirdcounter {
-    animation: count 5s  alternate ease-in-out;
+    animation: count 10s  alternate ease-in-out;
     counter-reset: numbers var(--numbers);
     font: 800 40px system-ui;
     padding: 2rem;
@@ -205,7 +205,7 @@
     inherits: false;
   }
   #numbercounter {
-    animation: counter 5s alternate ease-in-out;
+    animation: counter 10s alternate ease-in-out;
     counter-reset: num var(--num);
     font: 800 40px system-ui;
     padding: 2rem;
@@ -238,7 +238,7 @@
     inherits: false;
   }
   #secondcounter {
-    animation: counters 5s  alternate ease-in-out;
+    animation: counters 10s  alternate ease-in-out;
     counter-reset: number var(--number);
     font: 800 40px system-ui;
     padding: 2rem;
@@ -271,7 +271,7 @@
     inherits: false;
   }
   #thirdcounter {
-    animation: count 5s  alternate ease-in-out;
+    animation: count 10s  alternate ease-in-out;
     counter-reset: numbers var(--numbers);
     font: 800 40px system-ui;
     padding: 2rem;
